@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Arial, ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+
+  --color-background: #0B0C0E;
+  --color-foreground: #cbd5e1; /* slate-300 */
+  --color-card: #151619;
+  --color-card-foreground: #ffffff;
+  --color-primary: #10B981; /* emerald-500 */
+  --color-primary-foreground: #0B0C0E;
+  --color-secondary: #00000040;
+  --color-secondary-foreground: #94a3b8; /* slate-400 */
+  --color-muted: #1A1D23;
+  --color-muted-foreground: #64748b; /* slate-500 */
+  --color-border: rgba(255, 255, 255, 0.05);
+  --radius: 0.75rem; /* rounded-xl */
+}
+
+@layer base {
+  :root {
+    --background: #0B0C0E;
+    --foreground: #cbd5e1;
+    --card: #151619;
+    --card-foreground: #ffffff;
+    --primary: #10B981;
+    --primary-foreground: #0B0C0E;
+    --secondary: #1A1D23;
+    --secondary-foreground: #94a3b8;
+    --muted: #1A1D23;
+    --muted-foreground: #64748b;
+    --border: rgba(255, 255, 255, 0.05);
+    --radius: 0.75rem;
+    --popover: #151619;
+    --popover-foreground: #ffffff;
+    --accent: #1A1D23;
+    --accent-foreground: #ffffff;
+    --destructive: #f43f5e; /* rose-500 */
+    --destructive-foreground: #ffffff;
+    --input: rgba(255, 255, 255, 0.05);
+    --ring: #10B981;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    background-image: linear-gradient(#1A1D23 1px, transparent 1px), linear-gradient(90deg, #1A1D23 1px, transparent 1px);
+    background-size: 40px 40px;
+    @apply antialiased min-h-screen;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
+
+@utility grid-bg {
+  background-image: linear-gradient(#1A1D23 1px, transparent 1px), linear-gradient(90deg, #1A1D23 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+@utility mono {
+  @apply font-mono;
+}
+
+@utility glass {
+  background: rgba(21, 22, 25, 0.8);
+  backdrop-filter: blur(8px);
+}
+
+@utility hardware-card {
+  @apply bg-[#151619] text-white border border-white/5 rounded-xl;
+}
+
+@utility mono-label {
+  @apply font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500;
+}
+
+@utility data-value {
+  @apply font-mono text-sm text-white;
+}
+
+@utility accent-glow {
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
+}
+
+@utility emerald-badge {
+  @apply font-mono text-[10px] text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded uppercase;
+}
+
+@utility rose-badge {
+  @apply font-mono text-[10px] text-rose-400 bg-rose-400/10 px-2 py-0.5 rounded uppercase;
+}
+
+@utility amber-badge {
+  @apply font-mono text-[10px] text-amber-400 bg-amber-400/10 px-2 py-0.5 rounded uppercase;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "SYSPROBE Laboratory",
+  "description": "Enterprise-grade hardware diagnostic suite with high-precision gaming sensor analysis, CPU/RAM detection, and vision testing.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation",
+    "accelerometer",
+    "gyroscope",
+    "magnetometer"
+  ],
+  "majorCapabilities": []
+}
