@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Mic, CheckCircle2, AlertCircle, Activity, Square, Play, Trash2, MicOff } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { cn } from '@/lib/utils';
+import { Button } from './ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
+import { cn } from '../lib/utils';
 import { motion, AnimatePresence } from "motion/react";
 
 export function MicrophoneTest() {

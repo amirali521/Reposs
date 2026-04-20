@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Database, HardDrive, AlertCircle } from 'lucide-react';
-import { Progress } from "@/components/ui/progress";
-import { Button } from "@/components/ui/button";
+import { Progress } from "./ui/progress";
+import { Button } from "./ui/button";
 
 export function StorageTest() {
   const [quota, setQuota] = useState<{ usage: number; limit: number } | null>(null);

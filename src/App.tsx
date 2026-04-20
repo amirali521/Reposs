@@ -23,11 +23,11 @@ import {
   Monitor, Info, Menu, X, Compass as CompassIcon,
   Wifi, Volume2, Ruler
 } from 'lucide-react';
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { Separator } from "@/components/ui/separator";
-import { Toaster } from "@/components/ui/sonner";
+import { ScrollArea } from "./components/ui/scroll-area";
+import { Separator } from "./components/ui/separator";
+import { Toaster } from "./components/ui/sonner";
 import { motion, AnimatePresence } from "motion/react";
-import { cn } from "@/lib/utils";
+import { cn } from "./lib/utils";
 
 const NAV_ITEMS = [
   { id: 'overview', label: 'System Overview', icon: LayoutDashboard, component: SystemInfo },

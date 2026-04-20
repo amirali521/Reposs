@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Camera, RefreshCcw, CheckCircle2, AlertCircle, FlipHorizontal, Video, Square, Play, Trash2 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { cn } from '@/lib/utils';
+import { Button } from './ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
+import { cn } from '../lib/utils';
 import { motion, AnimatePresence } from "motion/react";
 
 export function CameraTest() {

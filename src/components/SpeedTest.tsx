@@ -1,10 +1,10 @@
 import React, { useState, useRef } from 'react';
 import { Wifi, ArrowDown, ArrowUp, Activity, RefreshCw } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Progress } from "@/components/ui/progress";
+import { Button } from './ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
+import { Progress } from "./ui/progress";
 import { motion, AnimatePresence } from "motion/react";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 
 export function SpeedTest() {
   const [status, setStatus] = useState<'idle' | 'testing' | 'complete' | 'error'>('idle');

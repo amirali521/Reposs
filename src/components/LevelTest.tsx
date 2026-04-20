@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Ruler, Maximize, Target, Info, RefreshCw } from 'lucide-react';
 import { motion } from "motion/react";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 
 export function LevelTest() {
   const [orientation, setOrientation] = useState<{ pitch: number; roll: number }>({ pitch: 0, roll: 0 });

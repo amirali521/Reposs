@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Volume2, Phone, Music, CheckCircle2, Play, Square, Settings2 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { cn } from '@/lib/utils';
+import { Button } from './ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
+import { cn } from '../lib/utils';
 
 export function SpeakerTest() {
   const [activeMode, setActiveMode] = useState<'idle' | 'media' | 'call'>('idle');

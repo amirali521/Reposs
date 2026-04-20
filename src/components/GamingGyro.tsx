@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Rotate3d, Target, Zap, Activity } from 'lucide-react';
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import { motion, AnimatePresence } from "motion/react";
 
 export function GamingGyro() {

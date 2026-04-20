@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Keyboard, MousePointer2, AlertCircle, Info } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { Button } from './ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
+import { Badge } from './ui/badge';
 import { motion, AnimatePresence } from 'motion/react';
 
 export function InputTest() {
