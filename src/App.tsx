@@ -13,6 +13,7 @@ import { SystemInfo } from './components/SystemInfo';
 import { StorageTest } from './components/StorageTest';
 import { FPSTest } from './components/FPSTest';
 import { GamingGyro } from './components/GamingGyro';
+import { LevelTest } from './components/LevelTest';
 import { SpeedTest } from './components/SpeedTest';
 import { SpeakerTest } from './components/SpeakerTest';
 import { 
@@ -20,7 +21,7 @@ import {
   LayoutDashboard, Zap, Camera, Mic2, 
   Rotate3d, Database, MapPin, Keyboard, 
   Monitor, Info, Menu, X, Compass as CompassIcon,
-  Wifi, Volume2
+  Wifi, Volume2, Ruler
 } from 'lucide-react';
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
@@ -36,6 +37,7 @@ const NAV_ITEMS = [
   { id: 'audio', label: 'Audio Input', icon: Mic2, component: MicrophoneTest },
   { id: 'speaker', label: 'Acoustic Output', icon: Volume2, component: SpeakerTest },
   { id: 'gyro', label: 'Motion IMU', icon: Rotate3d, component: GamingGyro },
+  { id: 'level', label: 'Surface Level', icon: Ruler, component: LevelTest },
   { id: 'storage', label: 'Disk Volume', icon: Database, component: StorageTest },
   { id: 'location', label: 'Geolocation', icon: MapPin, component: LocationTest },
   { id: 'input', label: 'Haptic/Input', icon: Keyboard, component: InputTest },
